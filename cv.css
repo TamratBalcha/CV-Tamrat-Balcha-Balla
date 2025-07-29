@@ -1,0 +1,70 @@
+/* Global styles for a cream background and serif font */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdf5e6; /* light cream background */
+  font-family: Georgia, serif;
+  color: #030118;
+}
+
+/* Main resume container with border and padding */
+.resume {
+  width: 700px;
+  margin: 40px auto;
+  background-color: #fff;      /* white inner background for contrast */
+  border: 1px solid #ccc;      /* subtle grey border */
+  padding: 20px 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo placeholder styling */
+#photo {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 100px;
+  height: 120px;
+  background-color: #ddd; /* placeholder grey */
+  object-fit: cover;
+  border: 1px solid #999;
+}
+
+/* Clear photo float after profile section */
+#profile::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Section headings */
+.resume h2 {
+  margin: 40px 0 10px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Entry subheadings */
+.resume h3 {
+  margin: 10px 0 5px;
+  font-size: 1em;
+  color: #000;
+}
+
+/* Paragraph spacing */
+.resume p {
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+/* Experience/Education entries */
+.entry {
+  margin-bottom: 15px;
+}
+
+/* Skills list styling */
+#skills ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 0;
+}
